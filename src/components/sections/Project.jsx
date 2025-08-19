@@ -15,6 +15,8 @@ const Project = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
               <h3 className="text-xl font-bold mb-2">Nykaa Clone</h3>
+              <img className="rounded" src="/niyka.png" alt="project1" />
+
               <p className="text-gray-400 mb-4">
                 Build E-commerce web application using HTML, CSS, JavaScript and
                 used firebase for database customizable product inventory.
@@ -49,6 +51,7 @@ const Project = () => {
 
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
               <h3 className="text-xl font-bold mb-2">Flipkart Clone</h3>
+              <img className="rounded" src="/flipkart.png" alt="project 2" />
               <p className="text-gray-400 mb-4">
                 Build E-commerce web application using HTML, CSS, JavaScript and
                 used firebase for database customizable product inventory.
@@ -83,6 +86,7 @@ const Project = () => {
 
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
               <h3 className="text-xl font-bold mb-2">Anti-Resume Platform</h3>
+              <img className="rounded" src="/antiResume.png" alt="project3" />
               <p className="text-gray-400 mb-4">
                 Anti-Resume Platform is a skill-first recruitment system where
                 hiring decisions are based on real-world capabilities instead of
@@ -122,6 +126,7 @@ const Project = () => {
 
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
               <h3 className="text-xl font-bold mb-2">Meals Master</h3>
+              <img className="rounded" src="/mealMaster.png" alt="project4" />
               <p className="text-gray-400 mb-4">
                 Meals Master is a beautiful and responsive meal browsing
                 application where users can explore a wide variety of dishes. It

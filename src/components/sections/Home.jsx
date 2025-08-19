@@ -9,6 +9,11 @@ const Home = () => {
     >
       <RevealOnScroll>
         <div className="text-center z-10 px-4">
+          <div className="flex items-center justify-center">
+            <div className="h-[200px] w-[200px]">
+              <img className="rounded-full" src="/Profile.jpg" alt="" />
+            </div>
+          </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right">
             Hi, I'm Soumen Shit
           </h1>
