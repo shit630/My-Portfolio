@@ -1,5 +1,6 @@
 import React from "react";
 import RevealOnScroll from "../RevealOnScroll";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Home = () => {
   const handleResumeClick = (e) => {
@@ -13,7 +14,6 @@ const Home = () => {
       "_blank"
     );
 
-    // 2. Trigger download
     const link = document.createElement("a");
     link.href = resumeUrl;
     link.download = "Soumen_Shit_Resume.pdf";
@@ -25,35 +25,76 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative"
+      className="min-h-screen flex items-center justify-center relative px-6 md:px-12 bg-gradient-to-b from-gray-900 via-gray-950 to-black"
     >
       <RevealOnScroll>
-        <div className="text-center z-10 px-4">
-          <div className="flex items-center justify-center">
-            <div className="h-[200px] w-[200px]">
-              <img className="rounded-full" src="/Profile.jpg" alt="" />
+        <div className="text-center z-10 max-w-3xl">
+          {/* Profile Image */}
+          <div className="flex items-center justify-center mb-5 mt-15">
+            <div className="h-[180px] w-[180px] md:h-[220px] md:w-[220px] rounded-full overflow-hidden border-4 border-blue-500/40 shadow-xl hover:scale-105 transition duration-300">
+              <img
+                className="h-full w-full object-cover"
+                src="/Profile.jpg"
+                alt="Soumen Shit"
+              />
             </div>
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right">
-            Hi, I'm Soumen Shit
+
+          {/* Title */}
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent leading-tight">
+            Hi, I'm <span className="text-blue-500">Soumen Shit</span>
           </h1>
-          <p className="tex-gray-400 text-lg mb-8 max-w-lg mx-auto">
-            I’m a full-stack developer who loves crafting clean, scalable web
-            applications. My goal is to build solutions that offer both
-            exceptional performance and a delightful user experience.
+
+          {/* Subtitle */}
+          <p className="text-gray-400 text-base md:text-lg mb-10 max-w-xl mx-auto leading-relaxed">
+            A passionate{" "}
+            <span className="text-blue-400">Full-Stack Developer </span>
+            who loves building clean, scalable, and user-friendly web
+            applications. I aim to craft solutions that combine performance with
+            great user experiences.
           </p>
-          <div className="flex justify-center space-x-4">
+
+          {/* Buttons */}
+          <div className="flex flex-wrap justify-center gap-4 mb-8">
             <button
               onClick={handleResumeClick}
-              className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)] cursor-pointer"
+              className="bg-blue-500 text-white py-3 px-8 rounded-lg font-medium shadow-lg 
+                         hover:bg-blue-600 hover:scale-105 transition transform duration-300 cursor-pointer"
             >
-              Resume
+              📄 Resume
             </button>
             <a
               href="#contact"
-              className="border border-blue-500/50 text-blue-500 py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.2)] hover:bg-blue-500/10"
+              className="border border-blue-500/50 text-blue-400 py-3 px-8 rounded-lg font-medium 
+                         hover:bg-blue-500/10 hover:scale-105 transition transform duration-300"
             >
-              Contact Me
+              ✉️ Contact Me
+            </a>
+          </div>
+
+          {/* Social Links */}
+          <div className="flex justify-center gap-6 text-gray-400 text-2xl">
+            <a
+              href="https://github.com/shit630"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white hover:scale-110 transition"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/soumen-software-enginner/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-400 hover:scale-110 transition"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="mailto:soumenshit907@gmail.com"
+              className="hover:text-red-400 hover:scale-110 transition"
+            >
+              <FaEnvelope />
             </a>
           </div>
         </div>
