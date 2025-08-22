@@ -19,7 +19,11 @@ import {
   SiChakraui,
   SiFirebase,
   SiNetlify,
+  SiPostman,
+  SiVercel,
+  SiRender,
 } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
 
 const Skills = () => {
   const frontendSkills = [
@@ -43,6 +47,10 @@ const Skills = () => {
     { name: "Git", icon: <FaGitAlt className="text-red-500" /> },
     { name: "GitHub", icon: <FaGithub className="text-gray-300" /> },
     { name: "Netlify", icon: <SiNetlify className="text-blue-400" /> },
+    { name: "Postman", icon: <SiPostman className="text-orange-500" /> },
+    { name: "VS Code", icon: <VscVscode className="text-blue-600" /> },
+    { name: "Vercel", icon: <SiVercel className="text-black" /> },
+    { name: "Render", icon: <SiRender className="text-purple-600" /> },
   ];
 
   const renderSkill = (skill, i) => (
